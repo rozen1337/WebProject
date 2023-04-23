@@ -1,0 +1,24 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Видео</h2>
+
+<div>
+    <h3>Видео 1</h3>
+    <video src="/media/video-1.webm" controls="controls" width="400" height="300" poster="/media/poster.webp"></video>
+</div>
+
+<hr />
+
+<div>
+    <h3>Видео 2</h3>
+    <video src="/media/video-2.mp4" controls="controls" width="400" height="300" poster="/media/poster.webp"></video>
+</div>
+
+<div>
+    <h3>Видео 3</h3>
+    <video src="/media/video-2.mp4" controls="controls" width="400" height="300" poster="/media/poster.webp"></video>
+</div>
+
+{% endblock %}

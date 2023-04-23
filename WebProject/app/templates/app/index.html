@@ -1,0 +1,59 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{% static 'app/content/aviasales1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Выберайте лучшие Авиа билеты!
+                    <a class="btn btn-default" href="https://www.aviasales.ru/?marker=96487.d5a812f7643fdf8baca23119144880&params=SGC1">
+                        Выбрать
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'app/content/aviasales.jpg'%}" alt="Второй слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Выборка бизнес процесса!
+                    <a class="btn btn-default" href="https://b2b.aviasales.ru/?utm_source=b2c&utm_medium=button&_ga=2.189485352.285116401.1682158151-194311376.1682158151">
+                        Перейти
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'app/content/aviasalesotel.png'%} " alt="Третий слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Отдыхайте в лучших местах!
+                    <a class="btn btn-default" href="https://www.aviasales.ru/guides?marker=96487.d5a812f7643fdf8baca23119144880&params=SGC1&travel_map_directions=true">
+                        В отдых!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Назад</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Вперёд</span>
+    </a>
+</div>
+
+
+{% endblock %}

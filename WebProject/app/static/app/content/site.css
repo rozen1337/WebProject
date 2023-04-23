@@ -1,0 +1,132 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.vertical-margins {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+    .navbar-brand span {
+        padding-left: 40px;
+    }
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* max-width: 34px; */
+}
+
+.about-logo {
+    max-width: 100px;
+    margin-right: 2em;
+    float: left;
+}
+
+.my-clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.list a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.list li:nth-child(2) img {
+    max-width: 100px;
+}
+
+.navbar {
+    background-color: #3178c6;
+    color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff !important;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #aaa !important;
+    }
+
+.navbar-inverse .navbar-brand {
+    color: #fff !important;
+}
+
+.carousel .item {
+    max-height: 600px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.newpost {
+    margin: 0;
+}
+
+    .newpost input,
+    .newpost textarea {
+        max-width: 100%;
+        width: 100%;
+    }
+
+.article-content {
+    font-size: 16px;
+}
+
+.comment-author {
+    color: #3178c6;
+}

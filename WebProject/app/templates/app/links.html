@@ -1,0 +1,51 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<h2>Полезные ресурсы</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Статьи</h2>
+        <p>Разные статьи и поучения про путешествия.</p>
+        <p><a class="btn btn-default" href="https://www.aviasales.ru/psgr?utm_source=aviasales.ru&utm_medium=morda&utm_campaign=blog&utm_content=psgr">Перейти &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Выборка стран</h2>
+        <p>Выбрать страну по карте мира.</p>
+        <p><a class="btn btn-default" href="https://www.aviasales.ru/map?params=SGCANYWHERE1">Перейти &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Бизнес</h2>
+        <p>Бесплатный бизнес сервис организации командировок.</p>
+        <p><a class="btn btn-default" href="https://b2b.aviasales.ru/?utm_source=b2c&utm_medium=menu&_ga=2.228434266.678684325.1682160774-72334902.1682160774">Перейти &raquo;</a></p>
+    </div>
+</div>
+
+<br />
+
+<h3>Связанные по тематике сайты</h3>
+
+<br />
+
+<ul class="row list-unstyled list">
+    <li class="col-md-4">
+        <a href="https://www.tutu.ru/?ysclid=lgrvah3c7a791331627">
+            <img src="{% static 'app/content/tutu.png'%} " alt="Tutu" />
+        </a>
+    </li>
+    <li class="col-md-4">
+        <a href="https://travel.yandex.ru/trains/?utm_source=yandex&utm_medium=search&utm_campaign=cn:ssa_rzd_competitors.1.generic_ru_desktop|cid:85921998&utm_term=kw:tutu%20ru|kid:44110918558&utm_content=aid:13851836272|bi:13851836272|ct:type1|gid:5167729953|pst:1|pst:premium|dt:desktop|pl%D1%81:none|plct:search|cgci:0|rn:%D0%A1%D1%83%D1%80%D0%B3%D1%83%D1%82|rid:973|rtid:44110918558|main&_openstat=ZGlyZWN0LnlhbmRleC5ydTs4NTkyMTk5ODsxMzg1MTgzNjI3Mjt5YW5kZXgucnU6cHJlbWl1bQ&yclid=9872373190185975807">
+            <img src="{% static 'app/content/yandex.jpg'%} " alt="Yandex Travel" />
+        </a>
+    </li>
+    <li class="col-md-4">
+        <a href="https://www.aeroflot.ru/sb/app/ru-ru#/search?_k=cnw31q">
+            <img src="{% static 'app/content/aeroflot.jpg'%} " alt="aeroflot.JPG" />
+        </a>
+    </li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% if data != None %}
+
+<h2>Спасибо за отзыв!</h2>
+<h3>Вы отправили:</h3>
+
+<ul class="list-unstyled">
+    <li>Имя: {{ data.name }}</li>
+    <li>Пол: {{ data.gender }}</li>
+    <li>Согласие на рассылку: {{ data.notice }}</li>
+    <li>e-mail: {{ data.email }}</li>
+    <li>Отзыв: {{ data.message }}</li>
+</ul>
+
+{% else %}
+
+<h2>Заполните анкету</h2>
+
+<form method="post">
+    {% csrf_token %}
+    
+    <table class="table-form">
+        <tr>
+            <td><label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label></td>
+            <td>{{ form.name }}</td>
+        </tr>
+        <tr>
+            <td><label for="{{ form.gender.id_for_label }}">{{ form.gender.label }}</label></td>
+            <td>{{ form.gender }}</td>
+        </tr>
+        <tr>
+            <td><label for="{{ form.notice.id_for_label }}">{{ form.notice.label }}</label></td>
+            <td>{{ form.notice }}</td>
+        </tr>
+        <tr>
+            <td><label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label></td>
+            <td>{{ form.email }}</td>
+        </tr>
+        <tr>
+            <td><label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label></td>
+            <td>{{ form.message }}</td>
+        </tr>
+    </table>
+
+    <input class="btn btn-default" type="submit" value="Отправить">
+</form>
+
+{% endif %}
+
+{% endblock %}
